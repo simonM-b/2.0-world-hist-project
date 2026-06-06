@@ -1,0 +1,10 @@
+narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in NewZeland.
+narrator: There are 2 characters\:\
+- Caitlin(pronounced kat-lyn)\
+- Melody
+[background arg="res://images/inside plane.jpg" fade="0.0"]
+Caitlin: so.. what continet is New Zeland in?
+Melody: Well its not in australia.
+Melody: I dont know.. Its in oceania but I dont really think thats a continet.
+[wait time="1.0"]
+narrator: 4 hours later.
