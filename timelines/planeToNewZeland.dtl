@@ -3,7 +3,9 @@ narrator: There are 2 characters\:\
 - Caitlin(pronounced kat-lyn)\
 - Melody
 [background arg="res://images/inside plane.jpg" fade="0.0"]
+join Caitlin left
 Caitlin: so.. what continet is New Zeland in?
+join Melody right
 Melody: Well its not in australia.
 Melody: I dont know.. Its in oceania but I dont really think thats a continet.
 [wait time="1.0"]
