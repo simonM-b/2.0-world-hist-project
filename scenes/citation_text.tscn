@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://5hrvqu1axak6"]
+
+[node name="citation text" type="Label" unique_id=1632882393 groups=["citation-text"]]
+top_level = true
+z_index = 4096
+z_as_relative = false
+offset_right = 40.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "test"
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=785170198]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

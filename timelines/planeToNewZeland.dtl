@@ -1,12 +1,45 @@
+narrator: To advance to the next text box press "space" or "click" on the screen
 narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in NewZeland.
 narrator: There are 2 characters\:\
 - Caitlin(pronounced kat-lyn)\
 - Melody
+[wait time="1.0"]
 [background arg="res://images/inside plane.jpg" fade="0.0"]
+do GLOBAL.showCitationText(0)
 join Caitlin left
 Caitlin: so.. what continet is New Zeland in?
 join Melody right
 Melody: Well its not in australia.
 Melody: I dont know.. Its in oceania but I dont really think thats a continet.
 [wait time="1.0"]
+leave Melody [animation="Fade Out"]
+leave Caitlin [animation="Fade Out"]
+[wait time="1.5"]
 narrator: 4 hours later.
+[wait time="1.0"]
+[background arg="res://images/Inside_Tokyo_International_Airport_Terminal_3_20240604.jpg" fade="0.0"]
+do GLOBAL.showCitationText(1)
+join Caitlin left
+join Melody right
+Caitlin: We finaly made it.
+Melody: Now that Im connected to the internet I keep on getting notifications.
+Caitlin: Thats weird me too
+narrator: The notifications read\:
+narrator: The cdc has declared an emergancy.\
+Only specilized and important Personel are getting this message. The news and information will be shared to the public in 6 hours.\
+Find shelter and start praying.
+Melody: We need to get out as soon as possible.
+Caitlin: In a place with a population of 5.3 million people we should get out of the big cities.
+Melody: Auckland, Christchurch, Wellington, Hamilton and the rest of the major cities are off the list.
+Caitlin: Your recall abilitis are amazing but it would be a better use of time if you knew some safe areas, like places where we wont die.
+Caitlin: We dont have a lot of time left.
+Caitlin: There could be zombies in New Zeland already.
+Melody: Your right we have to get out of this airport imedietly.
+leave Melody [animation="Fade Out"]
+leave Caitlin [animation="Fade Out"]
+[wait time="1.0"]
+[background arg="res://images/Bay_of_Islands_Airport_outside_2024.jpg" fade="0.0"]
+do GLOBAL.showCitationText(2)
+join Caitlin left
+join Melody right
+Caitlin: We need a plan of action.
