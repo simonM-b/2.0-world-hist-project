@@ -47,12 +47,12 @@ do GLOBAL.showCitationText(5)
 [background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
 [wait time="1.0"]
 join Caitlin left
+[background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
 join Melody right
 Caitlin: Now that we're in the middle of nowhere we can talk about a good place to stay and try to survive this apocalypse.
 Melody: On the ride here I created a graph of all the best locations to go and stay.
 Melody: Im pretty sure these places are our only hope.
 do GLOBAL.saveTheGameToQuick()
-[background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
 label read them cairfully
 do GLOBAL.showImage(0)
 [wait time="1.0"]
