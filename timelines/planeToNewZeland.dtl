@@ -1,4 +1,5 @@
 narrator: To advance to the next text box press "space" or "click" on the screen
+narrator: Note\: some images may not exactly match up with the current location of the characters
 narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in NewZeland.
 narrator: There are 2 characters\:\
 - Caitlin(pronounced kat-lyn)\
@@ -16,6 +17,10 @@ leave Melody [animation="Fade Out"]
 leave Caitlin [animation="Fade Out"]
 [wait time="1.5"]
 narrator: 4 hours later.
+pilot: You have officially made it to new zeland.
+pilot: The longitude and latitude of Wellington is\: -41° 17' 11.90" S, 174° 46' 32.05" E.
+pilot: Australia is the closest country to New Zealand. It lies over 4,100 kilometers to the north-west
+pilot: The avarage climate throughout the year here goes from 35f avarage in the mountains to 70f avarage in the beaches.
 [wait time="1.0"]
 [background arg="res://images/Inside_Tokyo_International_Airport_Terminal_3_20240604.jpg" fade="0.0"]
 do GLOBAL.showCitationText(1)
@@ -38,8 +43,4 @@ Melody: Your right we have to get out of this airport imedietly.
 leave Melody [animation="Fade Out"]
 leave Caitlin [animation="Fade Out"]
 [wait time="1.0"]
-[background arg="res://images/Bay_of_Islands_Airport_outside_2024.jpg" fade="0.0"]
-do GLOBAL.showCitationText(2)
-join Caitlin left
-join Melody right
-Caitlin: We need a plan of action.
+jump plan of action/

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://blfhls2ntkgj0"]
+
+[ext_resource type="Script" uid="uid://cdfgpk0e0gpx8" path="res://scenes/money label.gd" id="1_vubkq"]
+
+[node name="money" type="CanvasLayer" unique_id=1154543678]
+
+[node name="Panel" type="Panel" parent="." unique_id=1968431952]
+offset_top = 21.0
+offset_right = 341.0
+offset_bottom = 75.0
+
+[node name="Label" type="Label" parent="." unique_id=771052815]
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 74.0
+theme_override_font_sizes/font_size = 42
+text = "Money: 000"
+script = ExtResource("1_vubkq")

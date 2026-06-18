@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://5hrvqu1axak6"]
 
-[node name="citation text" type="Label" unique_id=1632882393 groups=["citation-text"]]
+[ext_resource type="Script" uid="uid://dwdji0m58jpov" path="res://scenes/citation_text.gd" id="1_v577o"]
+
+[node name="citation" type="CanvasLayer" unique_id=41592256 groups=["citation-text"]]
+script = ExtResource("1_v577o")
+
+[node name="citation text" type="Label" parent="." unique_id=1632882393 groups=["citation-text"]]
 top_level = true
 z_index = 4096
 z_as_relative = false
@@ -10,7 +15,7 @@ theme_override_font_sizes/font_size = 10
 text = "test"
 vertical_alignment = 1
 
-[node name="Panel" type="Panel" parent="." unique_id=785170198]
+[node name="Panel" type="Panel" parent="citation text" unique_id=785170198]
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15

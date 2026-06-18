@@ -25,9 +25,11 @@ GLOBAL="*uid://lcdxx12ils0t"
 directories/dch_directory={
 "Caitlin": "res://characters/Caitlin.dch",
 "Melody": "res://characters/Melody.dch",
-"narrator": "res://characters/narrator.dch"
+"narrator": "res://characters/narrator.dch",
+"pilot": "res://characters/pilot.dch"
 }
 directories/dtl_directory={
+"plan of action": "res://timelines/plan of action.dtl",
 "plane": "res://timelines/planeToNewZeland.dtl"
 }
 layout/style_directory={}

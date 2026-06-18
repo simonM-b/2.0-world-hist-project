@@ -1,0 +1,49 @@
+set {GLOBAL.money} = 3000
+[background arg="res://images/Bay_of_Islands_Airport_outside_2024.jpg" fade="0.0"]
+do GLOBAL.showCitationText(2)
+join Caitlin left
+join Melody right
+Caitlin: We need a plan of action.
+Caitlin: We should count up all of our money so we can find a way of transport to get out of here.
+[wait time="1.5"]
+do GLOBAL.spawnMoney()
+Melody: Looks like we have 3000 New Zeland dollars
+Caitlin: we need to get out fast
+Melody: lets get to the midde of newhere and then we can asses the situation
+[save slot="quicksave"]
+narrator: choose a mode of transport (click on the option you want to choose)
+- train $20
+	set {GLOBAL.money} -= 20
+	[wait time="1.0"]
+	leave Melody [animation="Fade Out"]
+	leave Caitlin [animation="Fade Out"]
+	[wait time="1.0"]
+	do GLOBAL.showCitationText(3)
+	[background arg="res://images/Inside_a_Northwest_Railway_Train_Carriage,_England.jpg" fade="0.5" wait="true"]
+	[wait time="1.0"]
+	join Caitlin left
+	join Melody right
+	[wait time="2.0"]
+	jump after choice
+- taxi $25
+	[wait time="1.0"]
+	set {GLOBAL.money} -= 25
+	leave Melody [animation="Fade Out"]
+	leave Caitlin [animation="Fade Out"]
+	[wait time="1.0"]
+	do GLOBAL.showCitationText(4)
+	[background arg="res://images/Inside_Taxi_(17156879531).jpg" fade="0.5" wait="true"]
+	[wait time="1.0"]
+	join Caitlin left
+	join Melody right
+	jump after choice
+label after choice
+[wait time="1.0"]
+leave Melody [animation="Fade Out"]
+leave Caitlin [animation="Fade Out"]
+[wait time="1.0"]
+do GLOBAL.showCitationText(5)
+[background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
+[wait time="1.0"]
+join Caitlin left
+join Melody right
