@@ -3,7 +3,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Dialogic.start(GLOBAL.startPath)
+	if GLOBAL.shouldStartFromSave:
+		Dialogic.Save.load()
+	else:
+		Dialogic.start(GLOBAL.startPath)
 
 
 

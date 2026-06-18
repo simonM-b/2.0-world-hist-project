@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blfhls2ntkgj0"]
 
-[ext_resource type="Script" uid="uid://cdfgpk0e0gpx8" path="res://scenes/money label.gd" id="1_vubkq"]
+[ext_resource type="Script" uid="uid://cdfgpk0e0gpx8" path="res://scripts/money label.gd" id="1_vubkq"]
 
 [node name="money" type="CanvasLayer" unique_id=1154543678]
 

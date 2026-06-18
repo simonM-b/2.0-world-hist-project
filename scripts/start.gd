@@ -16,4 +16,15 @@ func startGame(setPath):
 
 
 func _on_new_save_pressed() -> void:
+	GLOBAL.shouldStartFromSave = false
 	startGame(GLOBAL.firstTimeStartPath)
+
+
+func _on_load_pressed() -> void:
+	$AcceptDialog.show()
+
+
+func _on_load_from_save_pressed() -> void:
+	GLOBAL.shouldStartFromSave = true
+	get_tree().change_scene_to_file("res://scenes/the_story_path.tscn")
+	

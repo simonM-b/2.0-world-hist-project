@@ -1,10 +1,13 @@
-narrator: To advance to the next text box press "space" or "click" on the screen
+do GLOBAL.showImage(1)
+narrator: To advance to the next text box press "space" or "click" on the dialogue box
+narrator: If you accidentally advance and did not have the chance to read the dialogue you wanted press the history button in the top right
 narrator: Note\: some images may not exactly match up with the current location of the characters
 narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in NewZeland.
 narrator: There are 2 characters\:\
 - Caitlin(pronounced kat-lyn)\
 - Melody
 [wait time="1.0"]
+do GLOBAL.killAllAddedImages()
 [background arg="res://images/inside plane.jpg" fade="0.0"]
 do GLOBAL.showCitationText(0)
 join Caitlin left

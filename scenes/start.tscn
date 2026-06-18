@@ -53,4 +53,24 @@ layout_mode = 2
 text = "exit
 "
 
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1598131372]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(1000, 350)
+unresizable = true
+ok_button_text = "go back"
+dialog_close_on_escape = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AcceptDialog" unique_id=1910017211]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 992.0
+offset_bottom = 301.0
+
+[node name="load from save" type="Button" parent="AcceptDialog/VBoxContainer" unique_id=764694323]
+layout_mode = 2
+text = "click here to load from most recent auto save"
+
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/new save" to="." method="_on_new_save_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="AcceptDialog/VBoxContainer/load from save" to="." method="_on_load_from_save_pressed"]

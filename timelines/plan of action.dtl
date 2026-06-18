@@ -10,7 +10,8 @@ do GLOBAL.spawnMoney()
 Melody: Looks like we have 3000 New Zeland dollars
 Caitlin: we need to get out fast
 Melody: lets get to the midde of newhere and then we can asses the situation
-[save slot="quicksave"]
+do GLOBAL.saveTheGameToQuick()
+[background arg="res://images/Bay_of_Islands_Airport_outside_2024.jpg" fade="0.0"]
 narrator: choose a mode of transport (click on the option you want to choose)
 - train $20
 	set {GLOBAL.money} -= 20
@@ -47,3 +48,30 @@ do GLOBAL.showCitationText(5)
 [wait time="1.0"]
 join Caitlin left
 join Melody right
+Caitlin: Now that we're in the middle of nowhere we can talk about a good place to stay and try to survive this apocalypse.
+Melody: On the ride here I created a graph of all the best locations to go and stay.
+Melody: Im pretty sure these places are our only hope.
+do GLOBAL.saveTheGameToQuick()
+[background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
+label read them cairfully
+do GLOBAL.showImage(0)
+[wait time="1.0"]
+Melody: make sure to read them cairfully
+[wait time="3.0"]
+Melody: Now that youve read them you need to choose one
+narrator: Make sure to read each option cairfully
+- 1
+	narrator: are you sure?
+	- yes
+	- no
+		jump read them cairfully
+- 2
+	narrator: are you sure?
+	- yes
+	- no
+		jump read them cairfully
+- 3
+	narrator: are you sure?
+	- yes
+	- no
+		jump read them cairfully

@@ -84,6 +84,10 @@ func _apply_export_overrides() -> void:
 
 
 func _process(_delta : float) -> void:
+	if get_history_box().visible:
+		GLOBAL.hideAllAddedImages = true
+	else:
+		GLOBAL.hideAllAddedImages = false
 	if Engine.is_editor_hint():
 		return
 	if scroll_to_bottom_flag and get_history_box().visible and get_history_log().get_child_count():

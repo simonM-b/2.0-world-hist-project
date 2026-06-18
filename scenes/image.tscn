@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cqan2caxtibd7"]
+
+[ext_resource type="Script" uid="uid://b6yi6pg7rmhjv" path="res://scripts/image.gd" id="1_rcc82"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_wl3vw"]
+
+[node name="image" type="CanvasLayer" unique_id=1803327207 groups=["addedImage"]]
+script = ExtResource("1_rcc82")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1745140813]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -48.0
+offset_bottom = 347.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=380124282]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("1_wl3vw")

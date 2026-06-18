@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5hrvqu1axak6"]
 
-[ext_resource type="Script" uid="uid://dwdji0m58jpov" path="res://scenes/citation_text.gd" id="1_v577o"]
+[ext_resource type="Script" uid="uid://dwdji0m58jpov" path="res://scripts/citation_text.gd" id="1_v577o"]
 
 [node name="citation" type="CanvasLayer" unique_id=41592256 groups=["citation-text"]]
 script = ExtResource("1_v577o")
