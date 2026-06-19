@@ -1,8 +1,8 @@
 do GLOBAL.showImage(1)
 narrator: To advance to the next text box press "space" or "click" on the dialogue box
-narrator: If you accidentally advance and did not have the chance to read the dialogue you wanted press the history button in the top right
+narrator: If you accidentally advance and did not have the chance to read the dialogue you wanted, press the history button in the top right
 narrator: Note\: some images may not exactly match up with the current location of the characters
-narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in NewZeland.
+narrator: The 2 characters are going on a buisness trip, they are agrecultural scientists going to learn how to run a farm in New Zeland.
 narrator: There are 2 characters\:\
 - Caitlin(pronounced kat-lyn)\
 - Melody
@@ -20,29 +20,34 @@ leave Melody [animation="Fade Out"]
 leave Caitlin [animation="Fade Out"]
 [wait time="1.5"]
 narrator: 4 hours later.
-pilot: You have officially made it to new zeland.
+pilot: You have officially made it to New Zeland.
 pilot: The longitude and latitude of Wellington is\: -41° 17' 11.90" S, 174° 46' 32.05" E.
 pilot: Australia is the closest country to New Zealand. It lies over 4,100 kilometers to the north-west
 pilot: The avarage climate throughout the year here goes from 35f avarage in the mountains to 70f avarage in the beaches.
+pilot: The highest point in new zeland is 12,218ft above sea level and the lowest is 6ft below sea level
 [wait time="1.0"]
 [background arg="res://images/Inside_Tokyo_International_Airport_Terminal_3_20240604.jpg" fade="0.0"]
 do GLOBAL.showCitationText(1)
 join Caitlin left
 join Melody right
 Caitlin: We finaly made it.
-Melody: Now that Im connected to the internet I keep on getting notifications.
-Caitlin: Thats weird me too
+Melody: I hope I get to see The Southern Alps or Lake Taupō.
+Caitlin: Wait stop talking for a sec
+Caitlin: Now that I'm connected to the internet, I keep on getting notifications.
+Melody: Thats weird me too
 narrator: The notifications read\:
-narrator: The cdc has declared an emergancy.\
+narrator: The CDC has declared an emergancy.\
 Only specilized and important Personel are getting this message. The news and information will be shared to the public in 6 hours.\
 Find shelter and start praying.
+narrator: A new type of virus has breached containment.\
+It is not airborne and takes a bite from another infected mammal to spread.
 Melody: We need to get out as soon as possible.
-Caitlin: In a place with a population of 5.3 million people we should get out of the big cities.
+Caitlin: In a place with a population of 5.3 million people, we should get out of the big cities.
 Melody: Auckland, Christchurch, Wellington, Hamilton and the rest of the major cities are off the list.
-Caitlin: Your recall abilitis are amazing but it would be a better use of time if you knew some safe areas, like places where we wont die.
+Caitlin: Your recall abilities are amazing but it would be a better use of time if you knew some safe areas, like places where we won't die.
 Caitlin: We dont have a lot of time left.
-Caitlin: There could be zombies in New Zeland already.
-Melody: Your right we have to get out of this airport imedietly.
+Caitlin: Their could be zombies in New Zeland already.
+Melody: You're right we have to get out of this airport imedietly.
 leave Melody [animation="Fade Out"]
 leave Caitlin [animation="Fade Out"]
 [wait time="1.0"]

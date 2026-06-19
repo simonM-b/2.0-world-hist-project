@@ -7,9 +7,9 @@ Caitlin: We need a plan of action.
 Caitlin: We should count up all of our money so we can find a way of transport to get out of here.
 [wait time="1.5"]
 do GLOBAL.spawnMoney()
-Melody: Looks like we have 3000 New Zeland dollars
+Melody: Looks like we have 3,000 New Zeland dollars
 Caitlin: we need to get out fast
-Melody: lets get to the midde of newhere and then we can asses the situation
+Melody: lets get to the midde of nowhere and then we can asses the situation
 do GLOBAL.saveTheGameToQuick()
 [background arg="res://images/Bay_of_Islands_Airport_outside_2024.jpg" fade="0.0"]
 narrator: choose a mode of transport (click on the option you want to choose)
@@ -42,36 +42,42 @@ label after choice
 [wait time="1.0"]
 leave Melody [animation="Fade Out"]
 leave Caitlin [animation="Fade Out"]
-[wait time="1.0"]
 do GLOBAL.showCitationText(5)
 [background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
 [wait time="1.0"]
 join Caitlin left
 [background arg="res://images/Lake_Benmore,_New_Zealand.jpg" fade="0.5" wait="true"]
 join Melody right
-Caitlin: Now that we're in the middle of nowhere we can talk about a good place to stay and try to survive this apocalypse.
+Caitlin: Now that we're in the middle of nowhere, we can talk about a good place to stay and try to survive this apocalypse.
 Melody: On the ride here I created a graph of all the best locations to go and stay.
-Melody: Im pretty sure these places are our only hope.
+Melody: I'm pretty sure these places are our only hope.
 do GLOBAL.saveTheGameToQuick()
 label read them cairfully
 do GLOBAL.showImage(0)
 [wait time="1.0"]
-Melody: make sure to read them cairfully
+Melody: make sure to read them carefully
 [wait time="3.0"]
-Melody: Now that youve read them you need to choose one
-narrator: Make sure to read each option cairfully
-- 1
+Melody: Now that you've read them, you need to choose one
+narrator: Make sure to read each option carefully
+- Whakatāne
 	narrator: are you sure?
 	- yes
+		do GLOBAL.killAllAddedImages()
+		Caitlin: We need to call another taxi which will cost us 25 dollars.
+		set {GLOBAL.money} -= 25
+		leave Melody [animation="Fade Out"]
+		leave Caitlin [animation="Fade Out"]
+		jump whakatane/
 	- no
 		jump read them cairfully
-- 2
+- Taupō
 	narrator: are you sure?
 	- yes
-	- no
-		jump read them cairfully
-- 3
-	narrator: are you sure?
-	- yes
+		do GLOBAL.killAllAddedImages()
+		Caitlin: We need to call another taxi which will cost us 25 dollars.
+		set {GLOBAL.money} -= 25
+		leave Melody [animation="Fade Out"]
+		leave Caitlin [animation="Fade Out"]
+		jump taupo/
 	- no
 		jump read them cairfully

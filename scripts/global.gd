@@ -19,15 +19,21 @@ var citations = [
 	"MrSeabody. (2024). The entrance to Bay of Islands Airport, in Northland, New Zealand . wikimedia. Retrieved June 13, 2026, from https://commons.wikimedia.org/wiki/File:Bay_of_Islands_Airport_outside_2024.jpg.",
 	"Ifenomenal, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
 	"Everyone Sinks Starco, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
-	"Michal Klajban, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+	"Michal Klajban, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+	"Panamitsu, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+	"Phillip Capper from Wellington, New Zealand, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons",
+	"Ulrich Lange, Dunedin, New Zealand, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+	"Ulrich Lange, Dunedin, New Zealand, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
 ]
 
-var image1 = preload("res://icon.svg")
+var image1 = preload("res://images/Screenshot 2026-06-18 at 10.26.16 PM-1129w-downscale.net-847w-downscale.net.webp")
 var image2 = preload("res://images/Welcome to the game by Simon & Jaden. (natalie) (1)-661w-downscale.net.webp")
+var endimage = preload("res://images/endingoue.png")
 
 var images = [
 	image1,
-	image2
+	image2,
+	endimage
 ]
 
 func saveTheGameToQuick():

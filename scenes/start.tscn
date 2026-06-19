@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://chykqfu21lyb3"]
 
 [ext_resource type="Script" uid="uid://bjk7p67dxjcom" path="res://scripts/start.gd" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://htfiauoglrpi" path="res://images/endingoue.png" id="2_u80x2"]
 
 [node name="start" type="Control" unique_id=869961812]
 layout_mode = 3
@@ -48,6 +49,10 @@ text = "<-- if its your first time plaing press this."
 layout_mode = 2
 text = "load"
 
+[node name="img cit" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=1645244902]
+layout_mode = 2
+text = "image citations"
+
 [node name="exit" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=3400585]
 layout_mode = 2
 text = "exit
@@ -55,6 +60,7 @@ text = "exit
 
 [node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1598131372]
 oversampling_override = 1.0
+title = "Load your save"
 initial_position = 1
 size = Vector2i(1000, 350)
 unresizable = true
@@ -66,11 +72,42 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 992.0
 offset_bottom = 301.0
+mouse_filter = 2
 
 [node name="load from save" type="Button" parent="AcceptDialog/VBoxContainer" unique_id=764694323]
 layout_mode = 2
 text = "click here to load from most recent auto save"
 
+[node name="Endingoue" type="Sprite2D" parent="." unique_id=856064409]
+position = Vector2(982.16974, 606.5)
+scale = Vector2(0.51234573, 0.51234573)
+texture = ExtResource("2_u80x2")
+
+[node name="citations" type="AcceptDialog" parent="." unique_id=1471028330]
+oversampling_override = 1.0
+title = "Images"
+position = Vector2i(20, 200)
+size = Vector2i(350, 250)
+exclusive = false
+borderless = true
+ok_button_text = "exit"
+dialog_close_on_escape = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="citations" unique_id=1971646950]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 342.0
+offset_bottom = 201.0
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="citations/ScrollContainer" unique_id=790695110]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/new save" to="." method="_on_new_save_pressed"]
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/img cit" to="." method="_on_img_cit_pressed"]
 [connection signal="pressed" from="AcceptDialog/VBoxContainer/load from save" to="." method="_on_load_from_save_pressed"]
+[connection signal="confirmed" from="citations" to="." method="_on_citations_confirmed"]

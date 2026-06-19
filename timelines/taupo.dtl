@@ -1,0 +1,29 @@
+do GLOBAL.showCitationText(6)
+[background arg="res://images/Lake_Taupō_park_view.jpg" fade="0.0"]
+join Caitlin left
+join Melody right
+[save slot=""]
+[wait time="0.2"]
+Melody: We made it to Taupō
+Caitlin: We have to warn the people of the zombie outbreak.
+[wait time="1.0"]
+leave Melody [animation="Fade Out"]
+leave Caitlin [animation="Fade Out"]
+[wait time="1.0"]
+do GLOBAL.showCitationText(7)
+[background arg="res://images/Lake_Taupo_and_Waikato_River_aerial_view.jpg" fade="0.0"]
+narrator: Meloday and Caitlin setteled down in Taupō.
+narrator: You could say that Melody did get to sea lake Taupō after all.
+narrator: The town survived because Meloday and Caitlin tought most of the population how to farm and make their own food
+[wait time="1.0"]
+narrator: It took 12 years for a cure to be found
+[wait time="1.0"]
+narrator: In the end global civilization was left in shambles.
+[wait time="1.0"]
+narrator: Only small communities like Meloday's and Caitlin's thrived and survived
+[wait time="1.0"]
+narrator: After a while communities like Meloday's and Caitlin's slowely started a new world and civilization.
+[wait time="1.0"]
+do GLOBAL.showImage(2)
+narrator: The end. you may exit the game
+[wait time="2000.0"]
